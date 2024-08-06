@@ -120,6 +120,9 @@ make k8s=1.29 source_ami_owners=123456789123 source_ami_filter_name=RHEL9_STIG_B
 
 # Check default value and options in help doc
 make help
+
+# Graviton AMI build for K8S 1.29
+make k8s=1.29 arch=arm64
 ```
 
 The Makefile chooses a particular kubelet binary to use per Kubernetes version which you can [view here](Makefile).
